@@ -35,53 +35,7 @@ section {
   overflow: hidden;
 }
 
-.button {
-  height: 3.5rem;
-  width: 15rem;
-  background: #fe515b;
-  color: #fff;
-  font-size: 1.7rem;
-  text-transform: capitalize;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  margin: 1rem 0;
-}
-
-.button::before {
-  content: "";
-  position: absolute;
-  top: -100%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--blue);
-  z-index: -1;
-  transition: 0.2s linear;
-}
-
-.button:hover:before {
-  top: 0%;
-}
-
-.button:hover {
-  box-shadow: 0.1rem 0.5rem var(--blue), 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
-}
-
-.heading {
-  text-align: center;
-  font-size: 4rem;
-  padding: 1rem;
-  padding-top: 8rem;
-  color: #fff;
-}
-
-.heading span {
-  color: #fe515b;
-}
-
+/******************************** Header Section ********************************/
 header {
   width: 100%;
   position: fixed;
@@ -161,10 +115,12 @@ header .fa-bars {
 }
 
 .logo {
-  height: 60%;
-  width: 15%;
+  height: 90px;
+  width: 90px;
 }
+/******************************** Header Section Ends ******************************************/
 
+/******************************** Home Section ******************************************/
 .home {
   background: linear-gradient(
     90deg,
@@ -187,6 +143,53 @@ header .fa-bars {
   color: #fe515b;
 }
 
+.button {
+  height: 3.5rem;
+  width: 15rem;
+  background: #fe515b;
+  color: #fff;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--blue);
+  z-index: -1;
+  transition: 0.2s linear;
+}
+
+.button:hover:before {
+  top: 0%;
+}
+
+.button:hover {
+  box-shadow: 0.1rem 0.5rem var(--blue), 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  padding: 1rem;
+  padding-top: 8rem;
+  color: #fff;
+}
+
+.heading span {
+  color: #fe515b;
+}
+
 .about {
   background: linear-gradient(
     90deg,
@@ -195,7 +198,9 @@ header .fa-bars {
     rgba(17, 59, 112, 1) 100%
   );
 }
+/******************************** Home Section Ends ******************************************/
 
+/******************************** About Section ****************************************************/
 .about .content .box {
   margin: 3rem 0;
 }
@@ -215,7 +220,9 @@ header .fa-bars {
   padding-left: 6rem;
   color: #eee;
 }
+/******************************** About Section Ends ******************************************/
 
+/******************************** Facility Section ************************************************/
 .facility {
   min-height: 100vh;
   background: linear-gradient(
@@ -253,7 +260,9 @@ header .fa-bars {
 .facility .heading {
   color: #fff;
 }
+/******************************** Facility Section Ends ********************************/
 
+/******************************** Review Section ********************************/
 .review {
   background: url(../images/review-bg.jpg),
     /* linear-gradient(var(--black), var(--black)) */ no-repeat;
@@ -323,7 +332,9 @@ header .fa-bars {
   );
   transform: rotate(45deg);
 }
+/******************************** Review Section Ends ********************************/
 
+/******************************** Counter Section ********************************/
 .counter .box-container {
   display: flex;
   justify-content: center;
@@ -351,7 +362,9 @@ header .fa-bars {
 .counter .box-container .box h3 {
   color: #666;
 }
+/******************************** Counter Section Ends ********************************/
 
+/******************************** Contact Section ********************************/
 .contact {
   background: linear-gradient(
     90deg,
@@ -400,7 +413,9 @@ select {
 .contact form input[type="submit"]:hover {
   background: var(--black);
 }
+/******************************** Contact Section Ends ********************************/
 
+/******************************** Post Section ********************************/
 .post {
   background: linear-gradient(
     90deg,
@@ -458,7 +473,9 @@ select {
   font-size: 1.3rem;
   color: #eee;
 }
+/******************************** Post Section Ends ********************************/
 
+/******************************** Footer Section ********************************/
 .footer {
   background: linear-gradient(
     90deg,
@@ -518,9 +535,9 @@ select {
 header .fa-times {
   transform: rotate(180deg);
 }
+/******************************** Footer Section Ends ********************************/
 
-/* media queries  */
-
+/******************************** Media Queries ********************************/
 @media (max-width: 768px) {
   html {
     font-size: 55%;
@@ -580,3 +597,4 @@ header .fa-times {
     width: 100%;
   }
 }
+/******************************** Media Queries End ********************************/
